@@ -1,0 +1,71 @@
+.rear{
+    width: 200px;
+    height: 200px;
+    border: 4px double black;
+    border-radius: 10px;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .facial{
+    background-image: url(/src/features/Game//style/owl.jpeg);
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .cards{
+    width: 94vw;
+    height: 94vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+  }
+  .card{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.front {
+ 
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+
+     transform: perspective(600px) rotateY(-180deg); 
+}
+  .card.rotated > .front{
+    transform:  rotateY(180deg);
+    }
+    
+    .card.rotated > .back{ 
+        transform: rotateY(0deg);
+      } 
+      .startImg{
+        width: 100px;
+        height: 100px;
+      }
+      .pole{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #1a237e  ;
+        color: white;
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      }
+      .btn{
+        width: 180px;
+        height: 80px;
+        color: #1a237e  ;
+        font-size: 20px;
+        border-radius: 10px;
+      }
